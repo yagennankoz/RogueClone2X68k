@@ -1,191 +1,191 @@
-		¥í¡¼¥° ¥á¥Ã¥»¡¼¥¸¥Õ¥¡¥¤¥ë
+		ƒ[ƒO ƒƒbƒZ[ƒWƒtƒ@ƒCƒ‹
 
-´Á»ú¥³¡¼¥É¤Ï EUC(UNIX), Shift-JIS(MS-DOS, HUMAN) ¤Ç¤¢¤ëÉ¬Í×¤¬¤¢¤ê¤Þ¤¹¡£
-¥¨¥¹¥±¡¼¥×¥·¡¼¥±¥ó¥¹¤Ê¤É¤Î¥³¥ó¥È¥í¡¼¥ë¥³¡¼¥É¤ò´Þ¤á¤ë¤³¤È¤Ï¤Ç¤­¤Þ¤»¤ó¡£
-Ê¸»úÎó¤ÎÄ¹¤µ¤ÏºÇÂç 79 ¥Ð¥¤¥È¤Ç¤¹¡£
+Š¿ŽšƒR[ƒh‚Í EUC(UNIX), Shift-JIS(MS-DOS, HUMAN) ‚Å‚ ‚é•K—v‚ª‚ ‚è‚Ü‚·B
+ƒGƒXƒP[ƒvƒV[ƒPƒ“ƒX‚È‚Ç‚ÌƒRƒ“ƒgƒ[ƒ‹ƒR[ƒh‚ðŠÜ‚ß‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB
+•¶Žš—ñ‚Ì’·‚³‚ÍÅ‘å 79 ƒoƒCƒg‚Å‚·B
 
-¥á¥Ã¥»¡¼¥¸¤Î¥Ð¡¼¥¸¥ç¥ó(play.c)
+ƒƒbƒZ[ƒW‚Ìƒo[ƒWƒ‡ƒ“(play.c)
 1	"Message English version"
-»ý¤ÁÊª¤Î¼ïÎà
-2	"food "		"¿©ÎÈ"
-3	"scroll%s "	"´¬¤­Êª"
-4	"potion%s "	"¿åÌô"
-5	"wand "		"¤Ä¤¨"
+Ž‚¿•¨‚ÌŽí—Þ
+2	"food "		"H—Æ"
+3	"scroll%s "	"Šª‚«•¨"
+4	"potion%s "	"…–ò"
+5	"wand "		"‚Â‚¦"
 6	"staff "	""
-7	"armor "	"¤è¤í¤¤"
-8	"ring "		"»ØÎØ"
-9	"amlet "	"Ëâ½ü¤±"
+7	"armor "	"‚æ‚ë‚¢"
+8	"ring "		"Žw—Ö"
+9	"amlet "	"–‚œ‚¯"
 file: main.c
-10	"Hello %s, welcome to the Dungeons of Doom..." "¤ä¤¢¡¢%s¡£ ±¿Ì¿¤ÎÆ¶·¢¤Ø¤è¤¦¤³¤½..."
+10	"Hello %s, welcome to the Dungeons of Doom..." "‚â‚ A%sB ‰^–½‚Ì“´ŒA‚Ö‚æ‚¤‚±‚»..."
 
 file: init.c
 --More-- (now only in message.c)
-11	"--More--"	"¡ÎÂ³¤¯¡Ï"
+11	"--More--"	"m‘±‚­n"
 byebye_string: quit from interrupt
-12	"Okay, bye bye!"	"¤½¤ì¤Ç¤Ï¡¢¤Þ¤¿¤Í¡£"
+12	"Okay, bye bye!"	"‚»‚ê‚Å‚ÍA‚Ü‚½‚ËB"
 init()
 pen name 'pn' is NULL or longer than 30
-13	"Hey!  Who are you?"	"¤ª¤¿¤¯¡¢¤¤¤Ã¤¿¤¤Ã¯¤Ê¤Î¡©"
+13	"Hey!  Who are you?"	"‚¨‚½‚­A‚¢‚Á‚½‚¢’N‚È‚ÌH"
 screen too small (UNIX)
-14	"Must be played on 24x80 screen" "¤´¤á¤ó¡ª ²èÌÌ¤ÎÂç¤­¤µ¤ÏºÇÄã£²£´¡ß£¸£°¤Ê¤ó¤À¡£"
+14	"Must be played on 24x80 screen" "‚²‚ß‚ñI ‰æ–Ê‚Ì‘å‚«‚³‚ÍÅ’á‚Q‚S~‚W‚O‚È‚ñ‚¾B"
 onintr()
-15	"Interrupt"	"³ä¤ê¹þ¤ß¤¬¤¢¤Ã¤¿¡£"
+15	"Interrupt"	"Š„‚èž‚Ý‚ª‚ ‚Á‚½B"
 option ('o' command)
-16	"Your favorite fruit"	"¹¥¤­¤Ê²ÌÊª"
+16	"Your favorite fruit"	"D‚«‚È‰Ê•¨"
 env_get_value
-17	"Cannot alloc() memory" "¥á¥â¥ê¡¼¤¬Â­¤ê¤Þ¤»¤ó¡£ ¥²¡¼¥à¤ò½ªÎ»¤·¤Þ¤¹¡£"
+17	"Cannot alloc() memory" "ƒƒ‚ƒŠ[‚ª‘«‚è‚Ü‚¹‚ñB ƒQ[ƒ€‚ðI—¹‚µ‚Ü‚·B"
 
 file: hit.c
-mon_hit()	²øÊª¤Î¹¶·â
-18	"The %s misses" "%s¤Î¹¶·â¤Ï¤½¤ì¤¿¡£ "
-19	"The %s hit"	"%s%s¤ÏÌ¿Ãæ¤·¤¿¡£ "
+mon_hit()	‰ö•¨‚ÌUŒ‚
+18	"The %s misses" "%s‚ÌUŒ‚‚Í‚»‚ê‚½B "
+19	"The %s hit"	"%s%s‚Í–½’†‚µ‚½B "
 20	""
-21	""	"¤Î¹¶·â"
-rogue_hit()	¥×¥ì¥¤¥ä¡¼¤Î¹¶·â
-22	"You miss.  "	"%s¤Î¹¶·â¤Ï¤½¤ì¤¿¡£ "
-23	"You hit.  "	"%s¤Î¹¶·â¤ÏÌ¿Ãæ¤·¤¿¡£ "
+21	""	"‚ÌUŒ‚"
+rogue_hit()	ƒvƒŒƒCƒ„[‚ÌUŒ‚
+22	"You miss.  "	"%s‚ÌUŒ‚‚Í‚»‚ê‚½B "
+23	"You hit.  "	"%s‚ÌUŒ‚‚Í–½’†‚µ‚½B "
 mon_damage()
-24	"Defeated the %s"	"%s¤òÅÝ¤·¤¿¡£ "
+24	"Defeated the %s"	"%s‚ð“|‚µ‚½B "
 fight()
-25	"I see no monster there"	"¤½¤ÎÊý¸þ¤Ë¤Ï²øÊª¤¬¤¤¤Ê¤¤¡£"
+25	"I see no monster there"	"‚»‚Ì•ûŒü‚É‚Í‰ö•¨‚ª‚¢‚È‚¢B"
 
 file: invent.c
 inventory()
-26	"Your pack is empty"		"»ý¤Á¤â¤Î¤Ï¡¢£±¤Ä¤â»ý¤Ã¤Æ¤¤¤Ê¤¤¡£"
+26	"Your pack is empty"		"Ž‚¿‚à‚Ì‚ÍA‚P‚Â‚àŽ‚Á‚Ä‚¢‚È‚¢B"
 get_desc()
-27	"The Amulet of Yendor "		"¥¤¥§¥ó¥À¡¼¤ÎËâ½ü¤±"
-28	"%d pieces of gold"		"¸Ä¤Î¶â²ô"
-29	"%d "	(¤è¤í¤¤°Ê³°¤Î¤â¤Î)	"ËÜ¤Î"
-30	"%d rations of "		"ÂÞ¤Î"	(¿©ÎÈ)
-31	"Some "	(£±ÂÞ¤Î¤È¤­)	"¸Ä¤Î"	(¤³¤±¤â¤â)
-32	"some "	(£±ÂÞ¤Î¤È¤­)	"¤Ä¤Î"	(¤½¤ÎÂ¾¤Î»ý¤Á¤â¤Î)
-33	"titled "			"¤È¤¤¤¦"	(´¬¤­Êª)
-34	"called "  (discoverd()¤Ç¤Ï»È¤ï¤ì¤Ê¤¤) "¤È¸Æ¤Ö"	(´¬¤­Êª¡¢¿åÌô¡¢¾ó¡¢»ØÎØ) (discoverd() ¤Ç¤â)
-35	"(weapon in hand)"	"¡Ê»È¤Ã¤Æ¤¤¤ë¡Ë"	(Éð´ï¤ò)
-36	"(being worn)"		"¡ÊÃå¤Æ¤¤¤ë¡Ë"	(¤è¤í¤¤¤ò)
-37	"(on left hand)"	"¡Êº¸¼ê¡Ë"	(»ØÎØ)
-38	"(on right hand)"	"¡Ê±¦¼ê¡Ë"
+27	"The Amulet of Yendor "		"ƒCƒFƒ“ƒ_[‚Ì–‚œ‚¯"
+28	"%d pieces of gold"		"ŒÂ‚Ì‹à‰ò"
+29	"%d "	(‚æ‚ë‚¢ˆÈŠO‚Ì‚à‚Ì)	"–{‚Ì"
+30	"%d rations of "		"‘Ü‚Ì"	(H—Æ)
+31	"Some "	(‚P‘Ü‚Ì‚Æ‚«)	"ŒÂ‚Ì"	(‚±‚¯‚à‚à)
+32	"some "	(‚P‘Ü‚Ì‚Æ‚«)	"‚Â‚Ì"	(‚»‚Ì‘¼‚ÌŽ‚¿‚à‚Ì)
+33	"titled "			"‚Æ‚¢‚¤"	(Šª‚«•¨)
+34	"called "  (discoverd()‚Å‚ÍŽg‚í‚ê‚È‚¢) "‚ÆŒÄ‚Ô"	(Šª‚«•¨A…–òAñAŽw—Ö) (discoverd() ‚Å‚à)
+35	"(weapon in hand)"	"iŽg‚Á‚Ä‚¢‚éj"	(•Ší‚ð)
+36	"(being worn)"		"i’…‚Ä‚¢‚éj"	(‚æ‚ë‚¢‚ð)
+37	"(on left hand)"	"i¶Žèj"	(Žw—Ö)
+38	"(on right hand)"	"i‰EŽèj"
 get_wand_and_ring_materials()
-39	""	not used	"¤Î"	(¾ó¤Îºà¼Á: ...'¤Î'¾ó)
-40	""	not used	"¤Î"	(»ØÎØ¤Îºà¼Á: ...'¤Î'»ØÎØ)
+39	""	not used	"‚Ì"	(ñ‚ÌÞŽ¿: ...'‚Ì'ñ)
+40	""	not used	"‚Ì"	(Žw—Ö‚ÌÞŽ¿: ...'‚Ì'Žw—Ö)
 single_inv()
-41	"Inventory what?"	"Ä´¤Ù¤ë»ý¤Á¤â¤Î¤Î¼ïÎà¤Ï¡©"
-42	"No such item."		"¤½¤ì¤Ï»ý¤Ã¤Æ¤¤¤Ê¤¤¡£"
+41	"Inventory what?"	"’²‚×‚éŽ‚¿‚à‚Ì‚ÌŽí—Þ‚ÍH"
+42	"No such item."		"‚»‚ê‚ÍŽ‚Á‚Ä‚¢‚È‚¢B"
 inv_armor_weapon()
-43	"Not wielding anything"	"Éð´ï¤Ï»È¤Ã¤Æ¤¤¤Ê¤¤¡£"
-44	"Not wearing anything"	"¤è¤í¤¤¤ÏÃå¤Æ¤¤¤Ê¤¤¡£"
+43	"Not wielding anything"	"•Ší‚ÍŽg‚Á‚Ä‚¢‚È‚¢B"
+44	"Not wearing anything"	"‚æ‚ë‚¢‚Í’…‚Ä‚¢‚È‚¢B"
 discoverd()
-45	"What type?"		"¤É¤Î¼ïÎà¤Î¤â¤Î¤Ç¤¹¤«¡©"
-46	"Nothing discovered"	"ÃÎ¤Ã¤Æ¤¤¤ë¤â¤Î¤Ï¡¢²¿¤â¤Ê¤¤¡£"
-47	" Nothing about %s"	"  ¡ÊÃÎ¤Ã¤Æ¤¤¤ë%s¤Ï¤Ê¤¤¡Ë"
+45	"What type?"		"‚Ç‚ÌŽí—Þ‚Ì‚à‚Ì‚Å‚·‚©H"
+46	"Nothing discovered"	"’m‚Á‚Ä‚¢‚é‚à‚Ì‚ÍA‰½‚à‚È‚¢B"
+47	" Nothing about %s"	"  i’m‚Á‚Ä‚¢‚é%s‚Í‚È‚¢j"
 
 file: level.c
 drop_check()
-48	"You're floating in the air!"	"¹ß¤ê¤é¤ì¤Ê¤¤¡ª"
-49	"I see no way down"		"¹ß¤ê¤ë³¬ÃÊ¤¬¤Ê¤¤¡£"
+48	"You're floating in the air!"	"~‚è‚ç‚ê‚È‚¢I"
+49	"I see no way down"		"~‚è‚éŠK’i‚ª‚È‚¢B"
 check_up()
-50	"I see no way up"		"ÅÐ¤ë³¬ÃÊ¤¬¤Ê¤¤¡£"
-51	"Your way is magically blocked"	"³¬ÃÊ¤Ï²¿¼Ô¤«¤Î¼ê¤Ë¤è¤Ã¤Æ¤Õ¤µ¤¬¤ì¤Æ¤¤¤ë¡£"
-52	"You feel a wrenching sensation in your gut"	"°ßÂÞ¤ò¤Í¤¸ÀÚ¤é¤ì¤ë¤è¤¦¤Êµ¤Ê¬¤¬¤·¤¿¡£"
+50	"I see no way up"		"“o‚éŠK’i‚ª‚È‚¢B"
+51	"Your way is magically blocked"	"ŠK’i‚Í‰½ŽÒ‚©‚ÌŽè‚É‚æ‚Á‚Ä‚Ó‚³‚ª‚ê‚Ä‚¢‚éB"
+52	"You feel a wrenching sensation in your gut"	"ˆÝ‘Ü‚ð‚Ë‚¶Ø‚ç‚ê‚é‚æ‚¤‚È‹C•ª‚ª‚µ‚½B"
 add_exp()
-53	"Welcome to level %d"	±Ñ¸ì¤Î¤È¤­¤Ï %d	"¥ì¥Ù¥ë%s¤Ø¤è¤¦¤³¤½¡£"
+53	"Welcome to level %d"	‰pŒê‚Ì‚Æ‚«‚Í %d	"ƒŒƒxƒ‹%s‚Ö‚æ‚¤‚±‚»B"
 show_average_hp()
-54	"R-Hp: %d.%02d, E-Hp: %d.%02d (!: %d, V: %d)"	"´ðËÜ¾å¾ºÎ¨: %d.%02d, ¼Â¸ú¾å¾ºÎ¨: %d.%02d (!: %d, V: %d)"
+54	"R-Hp: %d.%02d, E-Hp: %d.%02d (!: %d, V: %d)"	"Šî–{ã¸—¦: %d.%02d, ŽÀŒøã¸—¦: %d.%02d (!: %d, V: %d)"
 
 file: message.c
 get_direction()
-55	"Direction?"	"Êý³Ñ¤Ï¡©"
+55	"Direction?"	"•ûŠp‚ÍH"
 print_stats()
-56	"Level: "	"³¬: "	(4¥Ð¥¤¥È, ±Ñ¸ì¤Î»þ¤Ï7Ê¸»ú)
-57	"Gold: "	"¶â²ô: " (6¥Ð¥¤¥È)
-58	"Hp: "		"ÂÎÎÏ: " (6¥Ð¥¤¥È, ±Ñ¸ì¤Î»þ¤Ï4Ê¸»ú)
-59	"Str: "		"¶¯¤µ: " (6¥Ð¥¤¥È, ±Ñ¸ì¤Î»þ¤Ï5Ê¸»ú)
-60	"Arm: "		"¼éÈ÷: " (6¥Ð¥¤¥È, ±Ñ¸ì¤Î»þ¤Ï5Ê¸»ú)
-61	"Exp: "		"·Ð¸³: " (6¥Ð¥¤¥È, ±Ñ¸ì¤Î»þ¤Ï5Ê¸»ú)
+56	"Level: "	"ŠK: "	(4ƒoƒCƒg, ‰pŒê‚ÌŽž‚Í7•¶Žš)
+57	"Gold: "	"‹à‰ò: " (6ƒoƒCƒg)
+58	"Hp: "		"‘Ì—Í: " (6ƒoƒCƒg, ‰pŒê‚ÌŽž‚Í4•¶Žš)
+59	"Str: "		"‹­‚³: " (6ƒoƒCƒg, ‰pŒê‚ÌŽž‚Í5•¶Žš)
+60	"Arm: "		"Žç”õ: " (6ƒoƒCƒg, ‰pŒê‚ÌŽž‚Í5•¶Žš)
+61	"Exp: "		"ŒoŒ±: " (6ƒoƒCƒg, ‰pŒê‚ÌŽž‚Í5•¶Žš)
 get_status_line()
-62	"" "³¬:    ¶â²ô:        ÂÎÎÏ:          ¶¯¤µ:        ¼éÈ÷:    ·Ð¸³:                "	(ÆüËÜ¸ì¤Î»þ¤Î¤ß)
+62	"" "ŠK:    ‹à‰ò:        ‘Ì—Í:          ‹­‚³:        Žç”õ:    ŒoŒ±:                "	(“ú–{Œê‚ÌŽž‚Ì‚Ý)
 monster.c
 mon_name()
-63	"something"	"²¿¼Ô¤«"
+63	"something"	"‰½ŽÒ‚©"
 create_monster()
-64	"You hear a faint cry of anguish in the distance"	"±ó¤¯¤«¤é¡¢¤«¤¹¤«¤ÊÅÜ¤ê¤Î¶«¤Ó¤¬Ê¹¤³¤¨¤ë¡£"
+64	"You hear a faint cry of anguish in the distance"	"‰“‚­‚©‚çA‚©‚·‚©‚È“{‚è‚Ì‹©‚Ñ‚ª•·‚±‚¦‚éB"
 aggravate()
-65	"You hear a high pitched humming noise"	"¤É¤³¤«¤é¤«¡¢¤«¤ó¹â¤¤¤¦¤Ê¤êÀ¼¤¬Ê¹¤³¤¨¤Æ¤¯¤ë¡£"
+65	"You hear a high pitched humming noise"	"‚Ç‚±‚©‚ç‚©A‚©‚ñ‚‚¢‚¤‚È‚èº‚ª•·‚±‚¦‚Ä‚­‚éB"
 
 file: move.c
 toplevel
-66	"You can move again"	"¤è¤¦¤ä¤¯ÂÎ¤¬¼«Í³¤Ë¤Ê¤Ã¤¿¡£"
+66	"You can move again"	"‚æ‚¤‚â‚­‘Ì‚ªŽ©—R‚É‚È‚Á‚½B"
 one_move_rogue()
-67	"You are being held"	"²øÊª¤Ë¤Ä¤«¤Þ¤¨¤é¤ì¤Æ¡¢Æ¨¤²¤é¤ì¤Ê¤¤¡£"
-68	"You are still stuck in the bear trap"	"·§¤Î¤ï¤Ê¤¬¡¢¤Ê¤«¤Ê¤«¤Ï¤º¤ì¤Ê¤¤¡£"
-69	""	(±Ñ¸ì¤Ç¤ÏÌµ°ÕÌ£)	"¤ò¼ê¤ËÆþ¤ì¤¿¡£"
-70	"Moved onto "			"¤Î¾å¤Ë¤¤¤ë¡£"
+67	"You are being held"	"‰ö•¨‚É‚Â‚©‚Ü‚¦‚ç‚ê‚ÄA“¦‚°‚ç‚ê‚È‚¢B"
+68	"You are still stuck in the bear trap"	"ŒF‚Ì‚í‚È‚ªA‚È‚©‚È‚©‚Í‚¸‚ê‚È‚¢B"
+69	""	(‰pŒê‚Å‚Í–³ˆÓ–¡)	"‚ðŽè‚É“ü‚ê‚½B"
+70	"Moved onto "			"‚Ìã‚É‚¢‚éB"
 check_hunger()
-71	"Hungry"	"¶õÊ¢"	(4¥Ð¥¤¥È¤Þ¤Ç¡¢±Ñ¸ì¤Ç¤Ï6Ê¸»ú¤Þ¤Ç¡Ë
-72	"Hungry"	"¶õÊ¢¤Ë¤Ê¤Ã¤Æ¤­¤¿¡£"
-73	"Weak"		"µ²²î"	(4¥Ð¥¤¥È¤Þ¤Ç¡¢±Ñ¸ì¤Ç¤Ï6Ê¸»ú¤Þ¤Ç¡Ë
-74	"Weak"		"¶õÊ¢¤Î¤»¤¤¤ÇÎÏ¤¬¤Ê¤¯¤Ê¤Ã¤Æ¤­¤¿¡£"
-75	"Faint"		"ÉÎ»à"	(4¥Ð¥¤¥È¤Þ¤Ç¡¢±Ñ¸ì¤Ç¤Ï6Ê¸»ú¤Þ¤Ç¡Ë
-76	"Faint"		"¶õÊ¢¤Ç¡¢¤â¤¦»à¤Ë¤½¤¦¤À¡£"
-77	"You faint"	"¶õÊ¢¤Ç¡¢ÌÜ¤¬¤¯¤é¤¯¤é¤¹¤ë¡£"
+71	"Hungry"	"‹ó• "	(4ƒoƒCƒg‚Ü‚ÅA‰pŒê‚Å‚Í6•¶Žš‚Ü‚Åj
+72	"Hungry"	"‹ó• ‚É‚È‚Á‚Ä‚«‚½B"
+73	"Weak"		"‹Q‰ì"	(4ƒoƒCƒg‚Ü‚ÅA‰pŒê‚Å‚Í6•¶Žš‚Ü‚Åj
+74	"Weak"		"‹ó• ‚Ì‚¹‚¢‚Å—Í‚ª‚È‚­‚È‚Á‚Ä‚«‚½B"
+75	"Faint"		"•mŽ€"	(4ƒoƒCƒg‚Ü‚ÅA‰pŒê‚Å‚Í6•¶Žš‚Ü‚Åj
+76	"Faint"		"‹ó• ‚ÅA‚à‚¤Ž€‚É‚»‚¤‚¾B"
+77	"You faint"	"‹ó• ‚ÅA–Ú‚ª‚­‚ç‚­‚ç‚·‚éB"
 reg_move()
-78	"You float gently to the ground"	"¤è¤¦¤ä¤¯ÃÏÌÌ¤ËÂ­¤¬¤Ä¤¤¤¿¡£"
-79	"You feel yourself slowing down" "ÁÇÁá¤¯¤Ê¤ëÌô¤Î¸ú¤­ÌÜ¤¬¤Ê¤¯¤Ê¤Ã¤¿¡£"
+78	"You float gently to the ground"	"‚æ‚¤‚â‚­’n–Ê‚É‘«‚ª‚Â‚¢‚½B"
+79	"You feel yourself slowing down" "‘f‘‚­‚È‚é–ò‚ÌŒø‚«–Ú‚ª‚È‚­‚È‚Á‚½B"
 
 file: object.c
 name_of()
-80	"unknown "	"¡©¡©¡©" (¥Ð¥°ÂÐºö¡©)
+80	"unknown "	"HHH" (ƒoƒO‘ÎôH)
 new_object_for_wizard()
-81	"Pack full"	"¤³¤ì°Ê¾å¤ÏÊª¤ò»ý¤Æ¤Ê¤¤¡£"
-82	"Type of object?" "¤É¤ó¤Ê¤â¤Î¤Ç¤¹¤«¡©"
-83	"Which kind of %s?" "%s¤Î¼ïÎà¤Ï¡©"
-84	"weapon"	"Éð´ï"
+81	"Pack full"	"‚±‚êˆÈã‚Í•¨‚ðŽ‚Ä‚È‚¢B"
+82	"Type of object?" "‚Ç‚ñ‚È‚à‚Ì‚Å‚·‚©H"
+83	"Which kind of %s?" "%s‚ÌŽí—Þ‚ÍH"
+84	"weapon"	"•Ší"
 
 file: pack.c
 toplevel
-85	"You can't, it appears to be cursed" "¼ö¤ï¤ì¤Æ¤¤¤ë¤Î¤Ç¡¢¤½¤ì¤Ï¤Ç¤­¤Ê¤¤¡ª"
+85	"You can't, it appears to be cursed" "Žô‚í‚ê‚Ä‚¢‚é‚Ì‚ÅA‚»‚ê‚Í‚Å‚«‚È‚¢I"
 pick_up()
-86	"The scroll turns to dust as you pick it up" "½¦¤¤¤¢¤²¤¿¤È¤¿¤ó¡¢´¬¤­Êª¤Ï¤Á¤ê¤Ë¤Ê¤Ã¤Æ¤·¤Þ¤Ã¤¿¡£"
-87	"Pack too full"		"¤â¤¦¤³¤ì°Ê¾å¡¢Êª¤Ï»ý¤Æ¤Ê¤¤¡£"
+86	"The scroll turns to dust as you pick it up" "E‚¢‚ ‚°‚½‚Æ‚½‚ñAŠª‚«•¨‚Í‚¿‚è‚É‚È‚Á‚Ä‚µ‚Ü‚Á‚½B"
+87	"Pack too full"		"‚à‚¤‚±‚êˆÈãA•¨‚ÍŽ‚Ä‚È‚¢B"
 drop()
-88	"There's already something there""¤½¤³¤Ë¤Ï¡¢¤¹¤Ç¤Ë²¿¤«¤¬ÃÖ¤«¤ì¤Æ¤¤¤ë¡£"
-89	"You have nothing to drop"	"Íî¤È¤¹Êª¤ò»ý¤Ã¤Æ¤¤¤Ê¤¤¡£"
-90	"Drop what?"			"Íî¤È¤¹Êª¤Ï¡©"
-91	"No such item."			"¤½¤ì¤Ï»ý¤Ã¤Æ¤¤¤Ê¤¤¡£"
-92	"Dropped "			"¤òÍî¤È¤·¤¿¡£"
+88	"There's already something there""‚»‚±‚É‚ÍA‚·‚Å‚É‰½‚©‚ª’u‚©‚ê‚Ä‚¢‚éB"
+89	"You have nothing to drop"	"—Ž‚Æ‚·•¨‚ðŽ‚Á‚Ä‚¢‚È‚¢B"
+90	"Drop what?"			"—Ž‚Æ‚·•¨‚ÍH"
+91	"No such item."			"‚»‚ê‚ÍŽ‚Á‚Ä‚¢‚È‚¢B"
+92	"Dropped "			"‚ð—Ž‚Æ‚µ‚½B"
 pack_letter()
-93	"Nothing appropriate"		"¤½¤ì¤Ï£±¤Ä¤â»ý¤Ã¤Æ¤¤¤Ê¤¤¡£"
+93	"Nothing appropriate"		"‚»‚ê‚Í‚P‚Â‚àŽ‚Á‚Ä‚¢‚È‚¢B"
 take_off()
-94	"Was wearing "		"¤òÃ¦¤¤¤À¡£"
-95	"Not wearing any"	"¤è¤í¤¤¤òÃå¤Æ¤¤¤Ê¤¤¡£"
+94	"Was wearing "		"‚ð’E‚¢‚¾B"
+95	"Not wearing any"	"‚æ‚ë‚¢‚ð’…‚Ä‚¢‚È‚¢B"
 wear()
-96	"You're already wearing some"	"Â¾¤Î¤è¤í¤¤¤òÃå¤Æ¤¤¤ë¡£"
-97	"Wear what?"			"¤É¤Î¤è¤í¤¤¤ò¡©"
-98	"No such item."			"¤½¤ì¤Ï»ý¤Ã¤Æ¤¤¤Ê¤¤¡£"
-99	"You can't wear that"		"¤½¤ì¤Ï¤è¤í¤¤¤Ç¤Ï¤Ê¤¤¡£"
-100	"Wearing "			"¤ò¿È¤Ë¤Ä¤±¤¿¡£"
+96	"You're already wearing some"	"‘¼‚Ì‚æ‚ë‚¢‚ð’…‚Ä‚¢‚éB"
+97	"Wear what?"			"‚Ç‚Ì‚æ‚ë‚¢‚ðH"
+98	"No such item."			"‚»‚ê‚ÍŽ‚Á‚Ä‚¢‚È‚¢B"
+99	"You can't wear that"		"‚»‚ê‚Í‚æ‚ë‚¢‚Å‚Í‚È‚¢B"
+100	"Wearing "			"‚ðg‚É‚Â‚¯‚½B"
 wield()
-101	"Wield what?"		"¤É¤ÎÉð´ï¤ò¡©"
-102	"No such item."		"¤½¤ì¤Ï»ý¤Ã¤Æ¤¤¤Ê¤¤¡£"
-103	"You can't wield %s"	"%s¤òÉð´ï¤Ë¤¹¤ë¤³¤È¤Ï¤Ç¤­¤Ê¤¤¡£"
-104	"armor"			"¤è¤í¤¤"
-105	"rings"			"»ØÎØ"
-106	"In use"		"¤½¤ÎÉð´ï¤Ï¤â¤¦»È¤Ã¤Æ¤¤¤ë¡£"
-107	"Wielding "		"¤Ë»ý¤Á¤«¤¨¤¿¡£"
+101	"Wield what?"		"‚Ç‚Ì•Ší‚ðH"
+102	"No such item."		"‚»‚ê‚ÍŽ‚Á‚Ä‚¢‚È‚¢B"
+103	"You can't wield %s"	"%s‚ð•Ší‚É‚·‚é‚±‚Æ‚Í‚Å‚«‚È‚¢B"
+104	"armor"			"‚æ‚ë‚¢"
+105	"rings"			"Žw—Ö"
+106	"In use"		"‚»‚Ì•Ší‚Í‚à‚¤Žg‚Á‚Ä‚¢‚éB"
+107	"Wielding "		"‚ÉŽ‚¿‚©‚¦‚½B"
 call_it()
-108	"Call what?"	"¸Æ¤ÓÌ¾¤ò¤Ä¤±¤ë¤â¤Î¤Ï¡©"
-109	"No such item."	"¤½¤ì¤Ï»ý¤Ã¤Æ¤¤¤Ê¤¤¡£"
-110	"Surely you already know what that's called"	"¤½¤ì¤Ë¤Ï¸Æ¤ÓÌ¾¤ò¤Ä¤±¤ë¤³¤È¤¬¤Ç¤­¤Ê¤¤¡£"
-111	"Call it:"		"¸Æ¤ÓÌ¾¤Ï¡©"
+108	"Call what?"	"ŒÄ‚Ñ–¼‚ð‚Â‚¯‚é‚à‚Ì‚ÍH"
+109	"No such item."	"‚»‚ê‚ÍŽ‚Á‚Ä‚¢‚È‚¢B"
+110	"Surely you already know what that's called"	"‚»‚ê‚É‚ÍŒÄ‚Ñ–¼‚ð‚Â‚¯‚é‚±‚Æ‚ª‚Å‚«‚È‚¢B"
+111	"Call it:"		"ŒÄ‚Ñ–¼‚ÍH"
 kick_into_pack()
-112	"Nothing here"		"¤³¤³¤Ë¤Ï¡¢²¿¤â¤Ê¤¤¡£"
-113	"You're floating in the air!"	"½¦¤¦¤³¤È¤¬¤Ç¤­¤Ê¤¤¡ª"
-114	"" (±Ñ¸ì¤Ç¤ÏÌµ°ÕÌ£)	"¤ò¼ê¤ËÆþ¤ì¤¿¡£ "
+112	"Nothing here"		"‚±‚±‚É‚ÍA‰½‚à‚È‚¢B"
+113	"You're floating in the air!"	"E‚¤‚±‚Æ‚ª‚Å‚«‚È‚¢I"
+114	"" (‰pŒê‚Å‚Í–³ˆÓ–¡)	"‚ðŽè‚É“ü‚ê‚½B "
 file: play.c
 toplevel
-115	"Unknown command"	"¥³¥Þ¥ó¥É¤¬°ã¤¤¤Þ¤¹¡£"
+115	"Unknown command"	"ƒRƒ}ƒ“ƒh‚ªˆá‚¢‚Ü‚·B"
 
-¥Ø¥ë¥×¥á¥Ã¥»¡¼¥¸
+ƒwƒ‹ƒvƒƒbƒZ[ƒW
 116	"?		print help			>   go down a staircase"
 117	"/		identify object			<   go up a staircase"
 118	"h, j, k, l	left, down, up, left		.   rest for a turn"
@@ -209,7 +209,7 @@ toplevel
 136	"v		print version information	@   print current stats"
 137	"!		shell escape			o   examine/set options"
 
-Ê¸»ú¤ÎÀâÌÀ
+•¶Žš‚Ìà–¾
 138	"You"
 139	"floor of a room"
 140	"wall of a room"
@@ -227,50 +227,50 @@ toplevel
 153	"a ring"
 154	"the Amulet of Yendor"
 
-155	"Which character?	"¤É¤ó¤ÊÊ¸»ú¤Ç¤¹¤«¡©"
+155	"Which character?	"‚Ç‚ñ‚È•¶Žš‚Å‚·‚©H"
 
 dosshell()
 MS-DOS, HUMAN
-156	"[ Type exit to return to rogue. ]""[ \"exit\" ¥³¥Þ¥ó¥É¤Ç¥í¡¼¥°¤ËÌá¤ê¤Þ¤¹ ]"
-	"[ Type \"exit\" to return to rogue. ]"	\ ¤Ï»È¤¨¤Ê¤¤
+156	"[ Type exit to return to rogue. ]""[ \"exit\" ƒRƒ}ƒ“ƒh‚Åƒ[ƒO‚É–ß‚è‚Ü‚· ]"
+	"[ Type \"exit\" to return to rogue. ]"	\ ‚ÍŽg‚¦‚È‚¢
 UNIX
-157	"[ Exit shell to return to rogue. ]""[ ¥·¥§¥ë¤ò½ªÎ»¤¹¤ë¤È¥í¡¼¥°¤ËÌá¤ê¤Þ¤¹ ]"
+157	"[ Exit shell to return to rogue. ]""[ ƒVƒFƒ‹‚ðI—¹‚·‚é‚Æƒ[ƒO‚É–ß‚è‚Ü‚· ]"
 
 file: ring.c
 toplevel
-158	 "Left or right hand?"	"º¸¼ê(L)¡¢¤½¤ì¤È¤â±¦¼ê(R)¡©"
-159	"There's no ring on that hand"	"¤½¤Á¤é¤Î¼ê¤Ë¤Ï»ØÎØ¤ò¤·¤Æ¤¤¤Ê¤¤¡£"
+158	 "Left or right hand?"	"¶Žè(L)A‚»‚ê‚Æ‚à‰EŽè(R)H"
+159	"There's no ring on that hand"	"‚»‚¿‚ç‚ÌŽè‚É‚ÍŽw—Ö‚ð‚µ‚Ä‚¢‚È‚¢B"
 put_on_ring()
-160	"Wearing two rings already"	"¤¹¤Ç¤ËÎ¾¼ê¤Ë»ØÎØ¤ò¤·¤Æ¤¤¤ë¡£"
-161	"Put on what?"			"¤É¤Î»ØÎØ¤ò¡©"
-162	"No such item."			"¤½¤ì¤Ï»ý¤Ã¤Æ¤¤¤Ê¤¤¡£"
-163	"That's not a ring"		"¤½¤ì¤Ï»ØÎØ¤Ç¤Ï¤Ê¤¤¡£"
-164	"That ring is already being worn""¤½¤Î»ØÎØ¤Ï¤â¤¦¼ê¤Ë¤Ï¤á¤Æ¤¤¤ë¡£"
-165	"There's already a ring on that hand""¤½¤Á¤é¤Î¼ê¤Ë¤Ï¤â¤¦»ØÎØ¤ò¤·¤Æ¤¤¤ë¡£"
+160	"Wearing two rings already"	"‚·‚Å‚É—¼Žè‚ÉŽw—Ö‚ð‚µ‚Ä‚¢‚éB"
+161	"Put on what?"			"‚Ç‚ÌŽw—Ö‚ðH"
+162	"No such item."			"‚»‚ê‚ÍŽ‚Á‚Ä‚¢‚È‚¢B"
+163	"That's not a ring"		"‚»‚ê‚ÍŽw—Ö‚Å‚Í‚È‚¢B"
+164	"That ring is already being worn""‚»‚ÌŽw—Ö‚Í‚à‚¤Žè‚É‚Í‚ß‚Ä‚¢‚éB"
+165	"There's already a ring on that hand""‚»‚¿‚ç‚ÌŽè‚É‚Í‚à‚¤Žw—Ö‚ð‚µ‚Ä‚¢‚éB"
 do_put_on()
-166	"Removed "	"¤ò¤Ï¤º¤·¤¿¡£"
+166	"Removed "	"‚ð‚Í‚¸‚µ‚½B"
 inv_rings()
-167	"Not wearing any rings"	"»ØÎØ¤Ï¤Ï¤á¤Æ¤¤¤Ê¤¤¡£"
+167	"Not wearing any rings"	"Žw—Ö‚Í‚Í‚ß‚Ä‚¢‚È‚¢B"
 
 file: score.c
 killed_by()
-	"  ¤³¤ÎÄ¹¤µ¤¬ºÇÂç  "
-168	"Died of"	"´¨¤µ¤Ë¤è¤ê"	to 172	(±Ñ¸ì¤Ç¤Ï ... of/from)
-169	"Died of"	"µ²¤¨¤Ë¤è¤ê"	to 173
-170	"Killed by a"	"ÆÇÌð¤Ë¤è¤ê"	to 174
-171	"Quit"		"Æ¨Ë´¤Ë¤è¤ê"	to 175
-172	"hypothermia"	"»à¤¹"
-173	"starvation"	"»à¤¹"
-174	"dart"		"»à¤¹"
-175	""		"¹ÔÊýÉÔÌÀ"
+	"  ‚±‚Ì’·‚³‚ªÅ‘å  "
+168	"Died of"	"Š¦‚³‚É‚æ‚è"	to 172	(‰pŒê‚Å‚Í ... of/from)
+169	"Died of"	"‹Q‚¦‚É‚æ‚è"	to 173
+170	"Killed by a"	"“Å–î‚É‚æ‚è"	to 174
+171	"Quit"		"“¦–S‚É‚æ‚è"	to 175
+172	"hypothermia"	"Ž€‚·"
+173	"starvation"	"Ž€‚·"
+174	"dart"		"Ž€‚·"
+175	""		"s•û•s–¾"
 
-176	"killed by a"	"¤ÈÀï¤¤¤Æ»à¤¹"
+176	"killed by a"	"‚Æí‚¢‚ÄŽ€‚·"
 
-177	" REST "	"°Â¤é¤«¤Ë"
-178	"  IN  "	"Ì²¤ì"
-179	"PEACE "	""	(ÆüËÜ¸ì¤Ç¤ÏÌ¤»ÈÍÑ)
-180	"%ld Au" (±Ñ¸ì)		"¡ð" (ÆüËÜ¸ì)
-181	" with %ld gold"	"¡£  ½ê»ý¶â¤Ï¡ð"
+177	" REST "	"ˆÀ‚ç‚©‚É"
+178	"  IN  "	"–°‚ê"
+179	"PEACE "	""	(“ú–{Œê‚Å‚Í–¢Žg—p)
+180	"%ld Au" (‰pŒê)		"" (“ú–{Œê)
+181	" with %ld gold"	"B  ŠŽ‹à‚Í"
 
 182	"     Congratulations,  you have made it to the light of day!   "
 183	"You have joined the elite ranks of those who have escaped the  "
@@ -278,58 +278,58 @@ killed_by()
 185	"loot at a great profit and are admitted to the Fighters' Guild."
 
 put_scores()
-186	"Cannot read/create score file" "ÆÀÅÀ¥Õ¥¡¥¤¥ë¤¬¥ª¡¼¥×¥ó¤Ç¤­¤Þ¤»¤ó¡£"
-187	"Top  Ten  Scores"	"ºÇ ¹â ÆÀ ÅÀ"
- TOPSCO ¤Ç¤Ê¤¤¤È¤­¤Ï "Top  Ten  Rogueists" "ºÇ ¹â ÆÀ ÅÀ ¼Ô"
-188	"Rank   Score   Name"	"½ç°Ì   ÆÀÅÀ    Ì¾Á°"
+186	"Cannot read/create score file" "“¾“_ƒtƒ@ƒCƒ‹‚ªƒI[ƒvƒ“‚Å‚«‚Ü‚¹‚ñB"
+187	"Top  Ten  Scores"	"Å ‚ “¾ “_"
+ TOPSCO ‚Å‚È‚¢‚Æ‚«‚Í "Top  Ten  Rogueists" "Å ‚ “¾ “_ ŽÒ"
+188	"Rank   Score   Name"	"‡ˆÊ   “¾“_    –¼‘O"
 insert_score()
-189	"with Amulet"	"Ëâ½ü¤±¤ò¼ê¤Ë¡¢"
-190	" on level %d "		"ÃÏ²¼"
-191	""	(±Ñ¸ì¤Ç¤ÏÌµ°ÕÌ£)"³¬¤Ë¤Æ"
-192	"died of hypothermia"	"´¨¤µ¤Ë¤è¤ê»à¤¹"
-193	"died of starvation"	"µ²¤¨¤Ë¤è¤ê»à¤¹"
-194	"killed by a dart"	"ÆÇÌð¤Ë¤è¤ê»à¤¹"
-195	"quit"			"Æ¨Ë´¤¹"
-196	"a total winner"	"±¿Ì¿¤ÎÆ¶·¢¤è¤êÀ¸¤­¤Æµ¢¤ê¤¿¤ëÍ¦¼Ô"
-197	"killed by "		"¤ÈÀï¤¤¤Æ»à¤¹"
+189	"with Amulet"	"–‚œ‚¯‚ðŽè‚ÉA"
+190	" on level %d "		"’n‰º"
+191	""	(‰pŒê‚Å‚Í–³ˆÓ–¡)"ŠK‚É‚Ä"
+192	"died of hypothermia"	"Š¦‚³‚É‚æ‚èŽ€‚·"
+193	"died of starvation"	"‹Q‚¦‚É‚æ‚èŽ€‚·"
+194	"killed by a dart"	"“Å–î‚É‚æ‚èŽ€‚·"
+195	"quit"			"“¦–S‚·"
+196	"a total winner"	"‰^–½‚Ì“´ŒA‚æ‚è¶‚«‚Ä‹A‚è‚½‚é—EŽÒ"
+197	"killed by "		"‚Æí‚¢‚ÄŽ€‚·"
 sell_pack()
-198	"Value      Item"	" ²Á³Ê      »ý¤Á¤â¤Î"
+198	"Value      Item"	" ‰¿Ši      Ž‚¿‚à‚Ì"
 sf_error()
-199	"Sorry, score file is out of order" "ÆÀÅÀ¥Õ¥¡¥¤¥ë¤¬Àµ¤·¤¯¤¢¤ê¤Þ¤»¤ó¡£"
+199	"Sorry, score file is out of order" "“¾“_ƒtƒ@ƒCƒ‹‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB"
 file: spechit.c
 toplevel
-200	"flame"		"¤Û¤Î¤ª"
+200	"flame"		"‚Ù‚Ì‚¨"
 rust()
-201	"The rust vanishes instantly"	"¿å¤´¤±¤Î¼¾¤êµ¤¤Ï¤¹¤°¤Ë¾Ã¤¨µî¤Ã¤¿¡£"
-202	"Your armor weakens"		"¤è¤í¤¤¤Ï¤µ¤Ó¤Æ¤·¤Þ¤Ã¤¿¡ª"
+201	"The rust vanishes instantly"	"…‚²‚¯‚ÌŽ¼‚è‹C‚Í‚·‚®‚ÉÁ‚¦‹Ž‚Á‚½B"
+202	"Your armor weakens"		"‚æ‚ë‚¢‚Í‚³‚Ñ‚Ä‚µ‚Ü‚Á‚½I"
 freeze()
-203	"You are frozen"		"ÂÎ¤¬Åà¤ê¤Ä¤¤¤Æ¡¢Æ°¤±¤Ê¤¤¡ª"
+203	"You are frozen"		"‘Ì‚ª“€‚è‚Â‚¢‚ÄA“®‚¯‚È‚¢I"
 steal_gold()
-204	"Your purse feels lighter"	"¶â²ô¤òÅð¤Þ¤ì¤¿¡ª"
+204	"Your purse feels lighter"	"‹à‰ò‚ð“‚Ü‚ê‚½I"
 steal_item()
-205	"She stole "	"¤òÅð¤Þ¤ì¤¿¡ª"
+205	"She stole "	"‚ð“‚Ü‚ê‚½I"
 check_imitator()
-206	"Wait, that's a %s!"	"¤ª¤Ã¤È¡¢¤³¤¤¤Ä¤Ï%s¤À¡ª"
+206	"Wait, that's a %s!"	"‚¨‚Á‚ÆA‚±‚¢‚Â‚Í%s‚¾I"
 sting()
-207	"The %s's bite has weakened you"	"%s¤Ë³ú¤Þ¤ì¤Æ¡¢ÆÇ¤Ë¤ä¤é¤ì¤¿¡ª"
+207	"The %s's bite has weakened you"	"%s‚ÉŠš‚Ü‚ê‚ÄA“Å‚É‚â‚ç‚ê‚½I"
 drain_life()
-208	"You feel weaker"	"¶¯¤µ¤¬¸º¤Ã¤Æ¤·¤Þ¤Ã¤¿¡ª"
+208	"You feel weaker"	"‹­‚³‚ªŒ¸‚Á‚Ä‚µ‚Ü‚Á‚½I"
 m_confuse()
-209	"The gaze of the %s has confused you"	"%s¤Ë¤Ë¤é¤Þ¤ì¡¢Æ¬¤¬º®Íð¤·¤Æ¤·¤Þ¤Ã¤¿¡ª"
+209	"The gaze of the %s has confused you"	"%s‚É‚É‚ç‚Ü‚êA“ª‚ª¬—‚µ‚Ä‚µ‚Ü‚Á‚½I"
 
 file: throw.c
 throw()
-210	"Throw what?"	"Åê¤²¤ëÉð´ï¤Ï¡©"
-211	"No such item."	"¤½¤ì¤Ï»ý¤Ã¤Æ¤¤¤Ê¤¤¡£"
+210	"Throw what?"	"“Š‚°‚é•Ší‚ÍH"
+211	"No such item."	"‚»‚ê‚ÍŽ‚Á‚Ä‚¢‚È‚¢B"
 throw_at_monster()
 212	"The %s"	"%s"
-213	"misses.  "	"¤Ï¤½¤ì¤¿¡£ "
-214	"hit.  "	"¤ÏÌ¿Ãæ¤·¤¿¡£ "
+213	"misses.  "	"‚Í‚»‚ê‚½B "
+214	"hit.  "	"‚Í–½’†‚µ‚½B "
 flop_weapon()
-215	"The %svanishes as it hits the ground"	"%s¤ÏÃÏÌÌ¤ËÍî¤Á¤ë¤È¡¢¤É¤³¤«¤Ë¾Ã¤¨¤Æ¤·¤Þ¤Ã¤¿¡£"
+215	"The %svanishes as it hits the ground"	"%s‚Í’n–Ê‚É—Ž‚¿‚é‚ÆA‚Ç‚±‚©‚ÉÁ‚¦‚Ä‚µ‚Ü‚Á‚½B"
 
 file: trap.c
-¤ï¤Ê¤Î¾ðÊó¤Ï¤³¤³¤Ë½¸¤á¤Þ¤·¤¿¡£
+‚í‚È‚Ìî•ñ‚Í‚±‚±‚ÉW‚ß‚Ü‚µ‚½B
 toplevel
 216	"trap door"
 217	"You fell down a trap"
@@ -345,81 +345,81 @@ toplevel
 227	"A gush of water hits you on the head"
 
 trap_player()
-228	"The trap failed"	"´í¤¦¤¯¡¢¤ï¤Ê¤Ë¤Ï¤Þ¤ë¤È¤³¤í¤À¤Ã¤¿¡£"
+228	"The trap failed"	"Šë‚¤‚­A‚í‚È‚É‚Í‚Ü‚é‚Æ‚±‚ë‚¾‚Á‚½B"
 id_trap()
-229	"No trap there"		"¤½¤ÎÊý¸þ¤Ë¤Ï¡¢¤ï¤Ê¤¬¤Ê¤¤¡£"
+229	"No trap there"		"‚»‚Ì•ûŒü‚É‚ÍA‚í‚È‚ª‚È‚¢B"
 
 file: use.c
 toplevel
-230	"You have a strange feeling for a moment, then it passes"	"ÉÔ»×µÄ¤Êµ¤Ê¬¤Ë¤ª¤½¤ï¤ì¤¿¤¬¡¢¤¹¤°¤Ë¾Ã¤¨¤Æ¤¤¤Ã¤¿¡£"
+230	"You have a strange feeling for a moment, then it passes"	"•sŽv‹c‚È‹C•ª‚É‚¨‚»‚í‚ê‚½‚ªA‚·‚®‚ÉÁ‚¦‚Ä‚¢‚Á‚½B"
 quaff()
-231	"Quaff what?"	"°û¤à¿åÌô¤Ï¡©"
-232	"No such item."	"¤½¤ì¤Ï»ý¤Ã¤Æ¤¤¤Ê¤¤¡£"
-233	"You can't drink that"	"¤½¤ì¤Ï¿åÌô¤Ç¤Ï¤Ê¤¤¡£"
-234	"You feel stronger now, what bulging muscles!"	"²¿¤À¤«¡¢ÎÏ¤¬¤ï¤¤¤Æ¤¯¤ë¤¾¡ª"
-235	"This tastes great, you feel warm all over"	"¤³¤ì¤Ï¤¦¤Þ¤¤¡ª ¤«¤é¤À¤¬¥Ý¥«¥Ý¥«¤·¤Æ¤­¤¿¡£"
-236	"You begin to feel better"	"µ¤Ê¬¤¬¤è¤¯¤Ê¤Ã¤¿¡ª"
-237	"You begin to feel much better"	"¤È¤Æ¤âµ¤Ê¬¤¬¤è¤¯¤Ê¤Ã¤¿¡ª"
-238	"You feel very sick now"	"¤³¤Î¿åÌô¤ÏÆÇ¤À¤Ã¤¿¡ª"
-239	"Oh wow, everything seems so cosmic!"	"¤Õ¤Ë¤ã¡© ²¿¤â¤«¤â¤¬Æú¿§¤Ë¤ß¤¨¤ë¤Ê¤¢¡©"
-240	"What a trippy feeling"		"²¿¤À¤«¿ì¤Ã¤Ñ¤é¤¤¤ß¤¿¤¤¤Êµ¤Ê¬¤À¡ª"
-241	"Wait, what's going on here. Huh? What? Who?"	"¤¢¤ì¡© ¤³¤³¤Ï¤É¤³¡© »ä¤Ï¤À¤ì¡©"
-242	"You start to float in the air"	"ÂÎ¤¬Ãè¤ËÉâ¤¤¤Æ¤·¤Þ¤Ã¤¿¡ª"
-243	"You feel yourself moving much faster"	"ÂÎ¤¬ÁÇÁá¤¯Æ°¤¯¤è¤¦¤Ë¤Ê¤Ã¤¿¡ª"
-244	"Hmm, this potion tastes like %sjuice"	"¤¦¡Á¤à¡¢%s¥¸¥å¡¼¥¹¤Î¤è¤¦¤ÊÌ£¤¬¤¹¤ë¡£"
+231	"Quaff what?"	"ˆù‚Þ…–ò‚ÍH"
+232	"No such item."	"‚»‚ê‚ÍŽ‚Á‚Ä‚¢‚È‚¢B"
+233	"You can't drink that"	"‚»‚ê‚Í…–ò‚Å‚Í‚È‚¢B"
+234	"You feel stronger now, what bulging muscles!"	"‰½‚¾‚©A—Í‚ª‚í‚¢‚Ä‚­‚é‚¼I"
+235	"This tastes great, you feel warm all over"	"‚±‚ê‚Í‚¤‚Ü‚¢I ‚©‚ç‚¾‚ªƒ|ƒJƒ|ƒJ‚µ‚Ä‚«‚½B"
+236	"You begin to feel better"	"‹C•ª‚ª‚æ‚­‚È‚Á‚½I"
+237	"You begin to feel much better"	"‚Æ‚Ä‚à‹C•ª‚ª‚æ‚­‚È‚Á‚½I"
+238	"You feel very sick now"	"‚±‚Ì…–ò‚Í“Å‚¾‚Á‚½I"
+239	"Oh wow, everything seems so cosmic!"	"‚Ó‚É‚áH ‰½‚à‚©‚à‚ª“øF‚É‚Ý‚¦‚é‚È‚ H"
+240	"What a trippy feeling"		"‰½‚¾‚©Œ‚Á‚Ï‚ç‚¢‚Ý‚½‚¢‚È‹C•ª‚¾I"
+241	"Wait, what's going on here. Huh? What? Who?"	"‚ ‚êH ‚±‚±‚Í‚Ç‚±H Ž„‚Í‚¾‚êH"
+242	"You start to float in the air"	"‘Ì‚ª’ˆ‚É•‚‚¢‚Ä‚µ‚Ü‚Á‚½I"
+243	"You feel yourself moving much faster"	"‘Ì‚ª‘f‘‚­“®‚­‚æ‚¤‚É‚È‚Á‚½I"
+244	"Hmm, this potion tastes like %sjuice"	"‚¤`‚ÞA%sƒWƒ…[ƒX‚Ì‚æ‚¤‚È–¡‚ª‚·‚éB"
 read_scroll()
-245	"Read what?"		"ÆÉ¤à´¬¤­Êª¤Ï¡©"
-246	"No such item."		"¤½¤ì¤Ï»ý¤Ã¤Æ¤¤¤Ê¤¤¡£"
-247	"You can't read that"	"¤½¤ì¤Ï´¬¤­Êª¤Ç¤Ï¤Ê¤¤¡£"
-248	"You hear a maniacal laughter in the distance"	"±ó¤¯¤«¤é¡¢¶¸¤Ã¤¿¤è¤¦¤Ê¾Ð¤¤À¼¤¬Ê¹¤³¤¨¤Æ¤¯¤ë¡£"
-249	"Your %sglow%s %sfor a moment"	"¼ê¤Ë»ý¤Ã¤¿%s¤¬¡¢¤Û¤ó¤Î¾¯¤·%sµ±¤­¤ËÊñ¤Þ¤ì¤¿¡£"
-250	"Your hands tingle""²¿¤À¤«¡¢¼ê¤¬¤à¤º¤à¤º¤¹¤ë¡£"	(Éð´ï¤ò»ý¤Ã¤Æ¤¤¤Ê¤¤»þ)
-251	"Your armor glows %sfor a moment"	"Ãå¤Æ¤¤¤ë¤è¤í¤¤¤¬¡¢¤Û¤ó¤Î¾¯¤·%sµ±¤­¤ËÊñ¤Þ¤ì¤¿¡£"
-252	"Your skin crawls" "²¿¤À¤«¡¢ÂÎ¤¬¤à¤º¤à¤º¤¹¤ë¡£"	(¤è¤í¤¤¤òÃå¤Æ¤¤¤Ê¤¤»þ)
-253	"This is a scroll of identify"	"¤³¤ì¤Ï»ý¤Á¤â¤Î¤òÄ´¤Ù¤ë´¬¤­Êª¤À¤Ã¤¿¡£"
-254	"You fall asleep"	"ÃÎ¤é¤Ê¤¤¤¦¤Á¤ËÌ²¤ê¹þ¤ó¤Ç¤·¤Þ¤Ã¤¿¡£"
-255	"Your armor is covered by a shimmering gold shield" "Ãå¤Æ¤¤¤ë¤è¤í¤¤¤Ï¡¢µ±¤¯¶â¿§¤Î¸÷¤Ë¼é¤é¤ì¤¿¡£"
-256	"Your acne seems to have disappeared"	"²¿¤À¤«¡¢´é¤¬¤à¤º¤à¤º¤¹¤ë¡£"	(¤è¤í¤¤¤òÃå¤Æ¤¤¤Ê¤¤»þ)
-257	"You feel as though someone is watching over you"	"¤Õ¤Ã¤È¡¢Ã¯¤«¤Ë¸«¤Ä¤á¤é¤ì¤Æ¤¤¤ë¤è¤¦¤Êµ¤¤¬¤·¤¿¡£"
-258	"You feel in touch with the universal oneness"		"¤Õ¤Ã¤È¡¢½÷¿À¤Î¼ê¤ËÊñ¤Þ¤ì¤Æ¤¤¤ë¤è¤¦¤Êµ¤¤¬¤·¤¿¡£" (¸¸³Ð¤òµ¯¤³¤·¤Æ¤¤¤ë»þ)
-259	"This scroll seems to have a map on it"	"¤ª¤ä¡¢¤³¤Î´¬¤­Êª¤Ë¤ÏÃÏ¿Þ¤¬½ñ¤¤¤Æ¤¢¤ë¡ª"
+245	"Read what?"		"“Ç‚ÞŠª‚«•¨‚ÍH"
+246	"No such item."		"‚»‚ê‚ÍŽ‚Á‚Ä‚¢‚È‚¢B"
+247	"You can't read that"	"‚»‚ê‚ÍŠª‚«•¨‚Å‚Í‚È‚¢B"
+248	"You hear a maniacal laughter in the distance"	"‰“‚­‚©‚çA‹¶‚Á‚½‚æ‚¤‚ÈÎ‚¢º‚ª•·‚±‚¦‚Ä‚­‚éB"
+249	"Your %sglow%s %sfor a moment"	"Žè‚ÉŽ‚Á‚½%s‚ªA‚Ù‚ñ‚Ì­‚µ%s‹P‚«‚É•ï‚Ü‚ê‚½B"
+250	"Your hands tingle""‰½‚¾‚©AŽè‚ª‚Þ‚¸‚Þ‚¸‚·‚éB"	(•Ší‚ðŽ‚Á‚Ä‚¢‚È‚¢Žž)
+251	"Your armor glows %sfor a moment"	"’…‚Ä‚¢‚é‚æ‚ë‚¢‚ªA‚Ù‚ñ‚Ì­‚µ%s‹P‚«‚É•ï‚Ü‚ê‚½B"
+252	"Your skin crawls" "‰½‚¾‚©A‘Ì‚ª‚Þ‚¸‚Þ‚¸‚·‚éB"	(‚æ‚ë‚¢‚ð’…‚Ä‚¢‚È‚¢Žž)
+253	"This is a scroll of identify"	"‚±‚ê‚ÍŽ‚¿‚à‚Ì‚ð’²‚×‚éŠª‚«•¨‚¾‚Á‚½B"
+254	"You fall asleep"	"’m‚ç‚È‚¢‚¤‚¿‚É–°‚èž‚ñ‚Å‚µ‚Ü‚Á‚½B"
+255	"Your armor is covered by a shimmering gold shield" "’…‚Ä‚¢‚é‚æ‚ë‚¢‚ÍA‹P‚­‹àF‚ÌŒõ‚ÉŽç‚ç‚ê‚½B"
+256	"Your acne seems to have disappeared"	"‰½‚¾‚©AŠç‚ª‚Þ‚¸‚Þ‚¸‚·‚éB"	(‚æ‚ë‚¢‚ð’…‚Ä‚¢‚È‚¢Žž)
+257	"You feel as though someone is watching over you"	"‚Ó‚Á‚ÆA’N‚©‚ÉŒ©‚Â‚ß‚ç‚ê‚Ä‚¢‚é‚æ‚¤‚È‹C‚ª‚µ‚½B"
+258	"You feel in touch with the universal oneness"		"‚Ó‚Á‚ÆA—_‚ÌŽè‚É•ï‚Ü‚ê‚Ä‚¢‚é‚æ‚¤‚È‹C‚ª‚µ‚½B" (Œ¶Šo‚ð‹N‚±‚µ‚Ä‚¢‚éŽž)
+259	"This scroll seems to have a map on it"	"‚¨‚âA‚±‚ÌŠª‚«•¨‚É‚Í’n}‚ª‘‚¢‚Ä‚ ‚éI"
 idntfy()
-260	"What would you like to identify?"	"Ä´¤Ù¤ë»ý¤Á¤â¤Î¤Ï¡©"
-261	"No such item, try again"		"¤½¤ì¤Ï»ý¤Ã¤Æ¤¤¤Ê¤¤¡£"
+260	"What would you like to identify?"	"’²‚×‚éŽ‚¿‚à‚Ì‚ÍH"
+261	"No such item, try again"		"‚»‚ê‚ÍŽ‚Á‚Ä‚¢‚È‚¢B"
 eat()
-262	"Eat what?"		"¿©¤Ù¤ëÊª¤Ï¡©"
-263	"No such item."		"¤½¤ì¤Ï»ý¤Ã¤Æ¤¤¤Ê¤¤¡£"
-264	"You can't eat that"	"¤½¤ì¤Ï¿©¤Ù¤é¤ì¤Ê¤¤¡£"
-265	"Yum, that tasted good" (±Ñ¸ìÈÇ¤Ë¤Ï¤³¤ì¤Ï¤Ê¤¤)	"¤¦¡Á¤à¡¢¤Þ¤Ã¤¿¤ê¤È¤·¤Æ¤¤¤Æ¡¢¤½¤ì¤Ç¤¤¤Æ¤³¤¯¤¬¤¢¤ë¡£"
-266	"Yum, that tasted good"	"¤¢¤¢¡¢¤ª¤¤¤·¤«¤Ã¤¿¡£"
-267	"My, that was a yummy %s"	"¤ª¤ä¡¢¤Ê¤ó¤Æ´Å¤¤%s¤À¡£"
-268	"Yuk, that food tasted awful"	"¤²¤²¤Ã¡¢¤Þ¤º¤¤¡ª"
+262	"Eat what?"		"H‚×‚é•¨‚ÍH"
+263	"No such item."		"‚»‚ê‚ÍŽ‚Á‚Ä‚¢‚È‚¢B"
+264	"You can't eat that"	"‚»‚ê‚ÍH‚×‚ç‚ê‚È‚¢B"
+265	"Yum, that tasted good" (‰pŒê”Å‚É‚Í‚±‚ê‚Í‚È‚¢)	"‚¤`‚ÞA‚Ü‚Á‚½‚è‚Æ‚µ‚Ä‚¢‚ÄA‚»‚ê‚Å‚¢‚Ä‚±‚­‚ª‚ ‚éB"
+266	"Yum, that tasted good"	"‚ ‚ A‚¨‚¢‚µ‚©‚Á‚½B"
+267	"My, that was a yummy %s"	"‚¨‚âA‚È‚ñ‚ÄŠÃ‚¢%s‚¾B"
+268	"Yuk, that food tasted awful"	"‚°‚°‚ÁA‚Ü‚¸‚¢I"
 hold_monster()
-269	"You feel a strange sense of loss"	"µÞ¤Ë¡¢ÂÎ¤«¤éÎÏ¤¬È´¤±¤Æ¤¤¤¯¤è¤¦¤Êµ¤¤¬¤·¤¿¡£"
-270	"The monster freezes"			"²øÊª¤ÏÆ°¤±¤Ê¤¯¤Ê¤Ã¤¿¡ª"
-271	"The monsters around you freeze"	"²øÊª¤É¤â¤ÏÆ°¤±¤Ê¤¯¤Ê¤Ã¤¿¡ª"
+269	"You feel a strange sense of loss"	"‹}‚ÉA‘Ì‚©‚ç—Í‚ª”²‚¯‚Ä‚¢‚­‚æ‚¤‚È‹C‚ª‚µ‚½B"
+270	"The monster freezes"			"‰ö•¨‚Í“®‚¯‚È‚­‚È‚Á‚½I"
+271	"The monsters around you freeze"	"‰ö•¨‚Ç‚à‚Í“®‚¯‚È‚­‚È‚Á‚½I"
 unhallucinate()
-272	"Everything looks SO boring now"	"¤ä¤Ã¤È¡¢¤¢¤¿¤ê¤Î·Ê¿§¤¬¸µ¤É¤ª¤ê¤Ë¤Ê¤Ã¤¿¡£"
+272	"Everything looks SO boring now"	"‚â‚Á‚ÆA‚ ‚½‚è‚ÌŒiF‚ªŒ³‚Ç‚¨‚è‚É‚È‚Á‚½B"
 unblind()
-273	"The veil of darkness lifts"	"°Å°Ç¤Î¤È¤Ð¤ê¤¬¾å¤¬¤Ã¤Æ¤æ¤¯¡£"
+273	"The veil of darkness lifts"	"ˆÃˆÅ‚Ì‚Æ‚Î‚è‚ªã‚ª‚Á‚Ä‚ä‚­B"
 go_blind()
-274	"A cloak of darkness falls around you"	"¿¼¤¤°Å°Ç¤Î¤È¤Ð¤ê¤¬¤¢¤¿¤ê¤ò¤ª¤ª¤Ã¤Æ¤æ¤¯¡£"
+274	"A cloak of darkness falls around you"	"[‚¢ˆÃˆÅ‚Ì‚Æ‚Î‚è‚ª‚ ‚½‚è‚ð‚¨‚¨‚Á‚Ä‚ä‚­B"
 get_ehch_color()
-275	"blue "	"ÀÄ¤¤"	(Ãå¤Æ¤¤¤ë¤è¤í¤¤¡¢¤Û¤ó¤Î¾¯¤·...µ±¤­¤ËÊñ¤Þ¤ì¤¿¡£)
+275	"blue "	"Â‚¢"	(’…‚Ä‚¢‚é‚æ‚ë‚¢A‚Ù‚ñ‚Ì­‚µ...‹P‚«‚É•ï‚Ü‚ê‚½B)
 uncunfuse()
-276	"You feel less trippy now"	"¤Õ¤¿¤¿¤Ó¡¢·Ê¿§¤¬Æú¿§¤Ë¸«¤¨¤Æ¤­¤¿¡£"
-277	"You feel less confused now"	"¤è¤¦¤ä¤¯¡¢Æ¬¤¬¤Ï¤Ã¤­¤ê¤·¤Æ¤­¤¿¡£"
+276	"You feel less trippy now"	"‚Ó‚½‚½‚ÑAŒiF‚ª“øF‚ÉŒ©‚¦‚Ä‚«‚½B"
+277	"You feel less confused now"	"‚æ‚¤‚â‚­A“ª‚ª‚Í‚Á‚«‚è‚µ‚Ä‚«‚½B"
 
 file: zap.c
 zapp()
-278	"Zap with what?"	"¿¶¤ê¤«¤¶¤¹¤Ä¤¨¤Ï¡©"
-279	"No such item."		"¤½¤ì¤Ï»ý¤Ã¤Æ¤¤¤Ê¤¤¡£"
-280	"You can't zap with that" "¤½¤ì¤ò¿¶¤ê¤«¤¶¤¹¤³¤È¤Ï¤Ç¤­¤Ê¤¤¡£"
-281	"Nothing happens"	"¤·¤«¤·¡¢²¿¤âµ¯¤³¤é¤Ê¤«¤Ã¤¿¡£" (²ó¿ô¥ª¡¼¥Ð¡¼)
+278	"Zap with what?"	"U‚è‚©‚´‚·‚Â‚¦‚ÍH"
+279	"No such item."		"‚»‚ê‚ÍŽ‚Á‚Ä‚¢‚È‚¢B"
+280	"You can't zap with that" "‚»‚ê‚ðU‚è‚©‚´‚·‚±‚Æ‚Í‚Å‚«‚È‚¢B"
+281	"Nothing happens"	"‚µ‚©‚µA‰½‚à‹N‚±‚ç‚È‚©‚Á‚½B" (‰ñ”ƒI[ƒo[)
 zap_monster()
-282	"Nothing happens"	"¤·¤«¤·¡¢²¿¤âµ¯¤³¤é¤Ê¤«¤Ã¤¿¡£" (Ìò¤ËÎ©¤¿¤Ê¤¤¾ó)
+282	"Nothing happens"	"‚µ‚©‚µA‰½‚à‹N‚±‚ç‚È‚©‚Á‚½B" (–ð‚É—§‚½‚È‚¢ñ)
 
-²øÊª
+‰ö•¨
 307	"aquator"
 308	"bat"
 309	"centaur"
@@ -447,10 +447,10 @@ zap_monster()
 331	"yeti"
 332	"zombie"
 
-²ÌÊª
-333	"slime-mold "	"¤³¤±¤â¤â"
+‰Ê•¨
+333	"slime-mold "	"‚±‚¯‚à‚à"
 
-¿åÌô¤Î¿§
+…–ò‚ÌF
 334	"blue "
 335	"red "
 336	"green "
@@ -466,7 +466,7 @@ zap_monster()
 346	"burgundy "
 347	"beige "
 
-¿åÌô¤Î¼ïÎà
+…–ò‚ÌŽí—Þ
 348	"of increase strength "
 349	"of restore strength "
 350	"of healing "
@@ -482,7 +482,7 @@ zap_monster()
 360	"of haste self "
 361	"of see invisible "
 
-´¬¤­Êª¤Î¼ïÎà
+Šª‚«•¨‚ÌŽí—Þ
 362	"of protect armor "
 363	"of hold monster "
 364	"of enchant weapon "
@@ -496,7 +496,7 @@ zap_monster()
 372	"of aggravate monster "
 373	"of magic mapping "
 
-Éð´ï¤Î¼ïÎà
+•Ší‚ÌŽí—Þ
 374	"short bow "
 375	"darts "
 376	"arrows "
@@ -506,7 +506,7 @@ zap_monster()
 380	"long sword "
 381	"two handed sword "
 
-¤è¤í¤¤¤Î¼ïÎà
+‚æ‚ë‚¢‚ÌŽí—Þ
 382	"leather armor "
 383	"ring mail "
 384	"scale mail "
@@ -516,7 +516,7 @@ zap_monster()
 388	"plate mail "
 
 
-¾ó¤Î¼ïÎà
+ñ‚ÌŽí—Þ
 389	"of teleport away "
 390	"of slow monster "
 391	"of confuse monster "
@@ -528,7 +528,7 @@ zap_monster()
 397	"of cancellation "
 398	"of do nothing "
 
-»ØÎØ¤Î¼ïÎà
+Žw—Ö‚ÌŽí—Þ
 399	"of stealth "
 400	"of teleportation "
 401	"of regeneration "
@@ -541,7 +541,7 @@ zap_monster()
 408	"of maintain armor "
 409	"of searching "
 
-¾ó¤Îºà¼Á
+ñ‚ÌÞŽ¿
 410	"steel "
 411	"bronze "
 412	"gold "
@@ -573,7 +573,7 @@ zap_monster()
 438	"palm "
 439	"wooden "
 
-»ØÎØ¤Îºà¼Á
+Žw—Ö‚ÌÞŽ¿
 440	"diamond "
 441	"stibotantalite "
 442	"lapis lazuli "
@@ -589,7 +589,7 @@ zap_monster()
 452	"pearl "
 453	"garnet "
 
-´¬¤­Êª¤Î²»Àá
+Šª‚«•¨‚Ì‰¹ß
 454	"blech "
 455	"foo "
 456	"barf "

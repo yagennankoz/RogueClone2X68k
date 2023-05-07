@@ -294,7 +294,7 @@ mesg[128], mesg[129], mesg[130], mesg[131], mesg[132], mesg[133],
 mesg[134], mesg[135], mesg[136], mesg[137],
 "",
 #ifdef JAPAN
-"¡á¥¹¥Ú¡¼¥¹¤ò²¡¤·¤Æ¤¯¤À¤µ¤¤¡á",
+"ƒXƒy[ƒX‚ğ‰Ÿ‚µ‚Ä‚­‚¾‚³‚¢",
 #else
 "--Press space to continue--",
 #endif
@@ -458,7 +458,7 @@ options()
 	if (changed) {
 		move(n+1, 0);
 #ifdef JAPAN
-		addstr("¡á¥¹¥Ú¡¼¥¹¤ò²¡¤·¤Æ¤¯¤À¤µ¤¤¡á");
+		addstr("ƒXƒy[ƒX‚ğ‰Ÿ‚µ‚Ä‚­‚¾‚³‚¢");
 #else
 		addstr("--Press space to continue--");
 #endif
@@ -526,7 +526,7 @@ doshell()
 /*#ifdef MSDOS*/
 	if ((cmd = md_getenv("COMSPEC")) == NULL) {
 #ifdef JAPAN
-		message("´Ä¶­ÊÑ¿ô COMSPEC ¤¬¥»¥Ã¥È¤µ¤ì¤Æ¤¤¤Ş¤»¤ó", 0);
+		message("ŠÂ‹«•Ï” COMSPEC ‚ªƒZƒbƒg‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ", 0);
 #else
 		message("Sorry, no COMSPEC...", 0);
 #endif

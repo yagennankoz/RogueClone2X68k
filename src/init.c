@@ -327,32 +327,32 @@ opt envopt[] = {
 #ifdef JAPAN
 char *optdesc[] = {
 #ifndef MSDOS
-	"姜位するかどうか澄千をとる",
+	"廔椆偡傞偐偳偆偐妋擣傪偲傞",
 #endif
-	"败瓢面の山绩を乖わない",
+	"堏摦拞偺昞帵傪峴傢側偄",
 #ifndef ORIGINAL
-	"奶烯の逞で贿まらずに渴む",
-	"ゲ〖ム姜位箕に疏筛を山绩する",
+	"捠楬偺妏偱巭傑傜偢偵恑傓",
+	"僎乕儉廔椆帪偵曟昗傪昞帵偡傞",
 #else
-	"ゲ〖ム姜位箕に臣裹を山绩する",
+	"僎乕儉廔椆帪偵奫崪傪昞帵偡傞",
 #endif
 #ifdef COLOR
-	"キャラクタ〖をカラ〖で山绩する",
+	"僉儍儔僋僞乕傪僇儔乕偱昞帵偡傞",
 #endif
 	mesg[16],
-	"セ〖ブファイル叹",
-	"ニックネ〖ム",
+	"僙乕僽僼傽僀儖柤",
+	"僯僢僋僱乕儉",
 #ifndef ORIGINAL
-	"ゲ〖ムディレクトリ〖叹",
+	"僎乕儉僨傿儗僋僩儕乕柤",
 #endif
 #ifdef COLOR
-	"キャラクタ〖の山绩咖マッピング",
+	"僉儍儔僋僞乕偺昞帵怓儅僢僺儞僌",
 #endif
 #ifdef MSDOS
-	"蝗脱怠硷",
-	"茶烫网脱を倡幌するシ〖ケンス",
-	"茶烫网脱を姜位するシ〖ケンス",
-	"カ〖ソルオン】オフのシ〖ケンス",
+	"巊梡婡庬",
+	"夋柺棙梡傪奐巒偡傞僔乕働儞僗",
+	"夋柺棙梡傪廔椆偡傞僔乕働儞僗",
+	"僇乕僜儖僆儞乛僆僼偺僔乕働儞僗",
 #endif
 	NULL
 };

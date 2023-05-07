@@ -242,13 +242,13 @@ wizardize()
 	if (wizard) {
 		wizard = 0;
 #ifdef JAPAN
-		message("､筅ﾏ､茖｢ﾋ簍｡ｻﾈ､､､ﾇ､ﾏ､ﾊ､､｡｣", 0);
+		message("もはや、魔法使いではない。", 0);
 #else
 		message("Not wizard anymore", 0);
 #endif
 	} else {
 #ifdef JAPAN
-		if (get_input_line("ﾋ簍｡ｻﾈ､､､ﾎｹ邵ﾀﾍﾕ､ﾏ｡ｩ",
+		if (get_input_line("魔法使いの合言葉は？",
 #else
 		if (get_input_line("Wizard's password:",
 #endif
@@ -268,13 +268,13 @@ wizardize()
 				wizard = 1;
 				score_only = 1;
 #ifdef JAPAN
-				message("､隍ｦ､ｳ､ｽ｡｢ﾋ簍｡ｻﾈ､､､陦ｪ", 0);
+				message("ようこそ、魔法使いよ！", 0);
 #else
 				message("Welcome, mighty wizard!", 0);
 #endif
 			} else {
 #ifdef JAPAN
-				message("､ｽ､ﾊｹ邵ﾀﾍﾕ｡｢ﾃﾎ､鬢ﾊ､､､ﾍ｡｣", 0);
+				message("そんな合言葉、知らないね。", 0);
 #else
 				message("Sorry", 0);
 #endif

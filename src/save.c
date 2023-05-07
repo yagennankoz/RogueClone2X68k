@@ -45,8 +45,8 @@ save_game()
 	char fname[64];
 
 #ifdef JAPAN
-	if (!get_input_line("セ〖ブするファイル叹は々", save_file, fname,
-			"ゲ〖ムのセ〖ブを面贿しました。", 0, 1)) {
+	if (!get_input_line("僙乕僽偡傞僼傽僀儖柤偼丠", save_file, fname,
+			"僎乕儉偺僙乕僽傪拞巭偟傑偟偨丅", 0, 1)) {
 #else
 	if (!get_input_line("File name?", save_file, fname,
 			"Game not saved", 0, 1)) {
@@ -91,7 +91,7 @@ char *sfile;
 	if (	((fp = fopen(sfile, "w")) == NULL) ||
 			((file_id = md_get_file_id(sfile)) == -1)) {
 #ifdef JAPAN
-		message("セ〖ブファイルにアクセスできません。", 0);
+		message("僙乕僽僼傽僀儖偵傾僋僙僗偱偒傑偣傫丅", 0);
 #else
 		message("Problem accessing the save file", 0);
 #endif
@@ -102,7 +102,7 @@ char *sfile;
 	if (	((fp = fopen(sfile, "wb")) == NULL) ||
 			((file_id = md_get_file_id(sfile)) == -1)) {
 #ifdef JAPAN
-		message("セ〖ブファイルにアクセスできません。", 0);
+		message("僙乕僽僼傽僀儖偵傾僋僙僗偱偒傑偣傫丅", 0);
 #else
 		message("Problem accessing the save file", 0);
 #endif
@@ -183,14 +183,14 @@ char *fname;
 	if (((new_file_id = md_get_file_id(fname)) == -1) ||
 			((fp = fopen(fname, "r")) == NULL)) {
 #ifdef JAPAN
-		clean_up("ファイルがオ〖プンできませんでした。");
+		clean_up("僼傽僀儖偑僆乕僾儞偱偒傑偣傫偱偟偨丅");
 #else
 		clean_up("Cannot open file");
 #endif
 	}
 	if (md_link_count(fname) > 1) {
 #ifdef JAPAN
-		clean_up("ファイルはリンクされています。");
+		clean_up("僼傽僀儖偼儕儞僋偝傟偰偄傑偡丅");
 #else
 		clean_up("File has link");
 #endif
@@ -200,7 +200,7 @@ char *fname;
 	if (((new_file_id = md_get_file_id(fname)) == -1) ||
 			((fp = fopen(fname, "rb")) == NULL)) {
 #ifdef JAPAN
-		clean_up("ファイルがオ〖プンできませんでした。");
+		clean_up("僼傽僀儖偑僆乕僾儞偱偒傑偣傫偱偟偨丅");
 #else
 		clean_up("Cannot open file");
 #endif
@@ -216,7 +216,7 @@ char *fname;
 	read_string(login_name, fp);
 	if (strcmp(tbuf, login_name)) {
 #ifdef JAPAN
-		clean_up("セ〖ブファイルの积ち肩が般います。");
+		clean_up("僙乕僽僼傽僀儖偺帩偪庡偑堘偄傑偡丅");
 #else
 		clean_up("You're not the original player");
 #endif
@@ -229,7 +229,7 @@ char *fname;
 	r_read(fp, (char *) &saved_file_id, sizeof(saved_file_id));
 	if (new_file_id != saved_file_id) {
 #ifdef JAPAN
-		clean_up("これは傅のセ〖ブファイルではありません。");
+		clean_up("偙傟偼尦偺僙乕僽僼傽僀儖偱偼偁傝傑偣傫丅");
 #else
 		clean_up("Sorry, saved game is not in the same file");
 #endif
@@ -263,7 +263,7 @@ char *fname;
 	if (fread(buf, sizeof(char), 1, fp) > 0) {
 		clear();
 #ifdef JAPAN
-		clean_up("ファイル面によけいな矢机があります。");
+		clean_up("僼傽僀儖拞偵傛偗偄側暥帤偑偁傝傑偡丅");
 #else
 		clean_up("Extra characters in file");
 #endif
@@ -274,14 +274,14 @@ char *fname;
 	if (has_been_touched(&saved_time, &mod_time)) {
 		clear();
 #ifdef JAPAN
-		clean_up("ファイルが恃构されています。");
+		clean_up("僼傽僀儖偑曄峏偝傟偰偄傑偡丅");
 #else
 		clean_up("Sorry, file has been touched");
 #endif
 	}
 	if ((!wizard) && !md_df(fname)) {
 #ifdef JAPAN
-		clean_up("ファイルを久すことができません。");
+		clean_up("僼傽僀儖傪徚偡偙偲偑偱偒傑偣傫丅");
 #else
 		clean_up("Cannot delete file");
 #endif
@@ -449,7 +449,7 @@ int n;
 {
 	if (fread(buf, sizeof(char), n, fp) != n) {
 #ifdef JAPAN
-		clean_up("ファイルが粕めません。");
+		clean_up("僼傽僀儖偑撉傔傑偣傫丅");
 #else
 		clean_up("Read() failed, don't know why");
 #endif
@@ -464,7 +464,7 @@ int n;
 	if (!write_failed) {
 		if (fwrite(buf, sizeof(char), n, fp) != n) {
 #ifdef JAPAN
-			message("ファイルに今けません。", 0);
+			message("僼傽僀儖偵彂偗傑偣傫丅", 0);
 #else
 			message("Write() failed, don't know why", 0);
 #endif

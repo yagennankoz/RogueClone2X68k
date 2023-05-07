@@ -648,7 +648,7 @@ md_gln()
 		if ((t = md_getenv("USER")) == NULL)	/* by Yasha */
 /*	if ((t = md_getenv("USER")) == NULL)*/
 #ifdef JAPAN
-		t = "Àï»Î";
+		t = "ï¿½ï¿½m";
 #else
 		t = "Fighter";
 #endif

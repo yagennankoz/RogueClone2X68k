@@ -28,6 +28,10 @@ char *argv[];
 	char buf[80];
 #endif
 
+#ifdef HUMAN
+	DOSINIT();
+#endif
+
 	if (read_mesg(argc, argv))
 		exit(1);
 

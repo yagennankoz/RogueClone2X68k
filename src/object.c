@@ -573,7 +573,7 @@ alloc_object()
 		free_list = free_list->next_object;
 	} else if (!(obj = (object *) md_malloc(sizeof(object)))) {
 #ifdef JAPAN
-		message("¥á¥â¥ê¡¼¤¬Â­¤ê¤Ş¤»¤ó¡£ ¥²¡¼¥à¤ò¥»¡¼¥Ö¤·¤Ş¤¹¡£", 0);
+		message("ƒƒ‚ƒŠ[‚ª‘«‚è‚Ü‚¹‚ñB ƒQ[ƒ€‚ğƒZ[ƒu‚µ‚Ü‚·B", 0);
 #else
 		message("Cannot allocate object, saving game", 0);
 #endif
@@ -791,7 +791,7 @@ short max;
 	char *p;
 #endif
 #ifdef JAPAN
-	char *msg = "  ¡á¥¹¥Ú¡¼¥¹¤ò²¡¤·¤Æ¤¯¤À¤µ¤¤¡á";
+	char *msg = "  ƒXƒy[ƒX‚ğ‰Ÿ‚µ‚Ä‚­‚¾‚³‚¢";
 	short len = 30;
 #else
 	char *msg = " --Press space to continue--";

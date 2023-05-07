@@ -53,7 +53,7 @@ unsigned short mask;
 	short row, col;
 	char *p;
 #ifdef JAPAN
-	char *msg = "  ¡á¥¹¥Ú¡¼¥¹¤ò²¡¤·¤Æ¤¯¤À¤µ¤¤¡á";
+	char *msg = "  ƒXƒy[ƒX‚ğ‰Ÿ‚µ‚Ä‚­‚¾‚³‚¢";
 	short len = 30;
 #else
 	char *msg = " --Press space to continue--";
@@ -160,7 +160,7 @@ make_scroll_titles()
 	for (i = 0; i < SCROLS; i++) {
 		sylls = get_rand(2, 5);
 #ifdef JAPAN
-		(void) strcpy(id_scrolls[i].title, "¡Ö");
+		(void) strcpy(id_scrolls[i].title, "u");
 		len = 2;
 		for (j = 0; j < sylls; j++) {
 			s = get_rand(1, (MAXSYLLABLES-1));
@@ -170,7 +170,7 @@ make_scroll_titles()
 			(void) strcat(id_scrolls[i].title, syllables[s]);
 			len += n;
 		}
-		(void) strcpy(id_scrolls[i].title+(len-1), "¡×");
+		(void) strcpy(id_scrolls[i].title+(len-1), "v");
 #else
 		(void) strcpy(id_scrolls[i].title, "'");
 		for (j = 0; j < sylls; j++) {
@@ -297,9 +297,9 @@ ID:		switch(obj->what_is) {
 			if (wizard || obj->identified) {
 				if ((obj->which_kind == DEXTERITY) ||
 					(obj->which_kind == ADD_STRENGTH)) {
-					strcpy(more_info, "¡Ê");
+					strcpy(more_info, "i");
 					znum(more_info, obj->class, 1);
-					strcat(more_info, "¡Ë");
+					strcat(more_info, "j");
 					(void) strcat(desc, more_info);
 				}
 			}
@@ -309,28 +309,28 @@ ID:		switch(obj->what_is) {
 			(void) strcat(desc, id_table[obj->which_kind].real);
 			(void) strcat(desc, item_name);
 			if (wizard || obj->identified) {
-				strcpy(more_info, "¡Î");
+				strcpy(more_info, "m");
 				znum(more_info, obj->class, 0);
-				strcat(more_info, "¡Ï");
+				strcat(more_info, "n");
 				(void) strcat(desc, more_info);
 			}
 			break;
 		case ARMOR:
-			strcpy(desc, "¡Ê");
+			strcpy(desc, "i");
 			znum(desc, obj->d_enchant, 1);
-			strcat(desc, "¡Ë");
+			strcat(desc, "j");
 			(void) strcat(desc, id_table[obj->which_kind].title);
-			strcpy(more_info, "¡Î");
+			strcpy(more_info, "m");
 			znum(more_info, get_armor_class(obj), 0);
-			strcat(more_info, "¡Ï");
+			strcat(more_info, "n");
 			(void) strcat(desc, more_info);
 			break;
 		case WEAPON:
-			strcat(desc, "¡Ê");
+			strcat(desc, "i");
 			znum(desc, obj->hit_enchant, 1);
-			strcat(desc, "¡¤");
+			strcat(desc, "C");
 			znum(desc, obj->d_enchant, 1);
-			strcat(desc, "¡Ë");
+			strcat(desc, "j");
 			(void) strcat(desc, name_of(obj));
 			break;
 		}
@@ -662,7 +662,7 @@ discovered()
 	struct dobj *op;
 	char *p;
 #ifdef JAPAN
-	char *msg = "  ¡á¥¹¥Ú¡¼¥¹¤ò²¡¤·¤Æ¤¯¤À¤µ¤¤¡á";
+	char *msg = "  ƒXƒy[ƒX‚ğ‰Ÿ‚µ‚Ä‚­‚¾‚³‚¢";
 	short len = 30;
 #else
 	char *msg = " --Press space to continue--";
@@ -813,7 +813,7 @@ nextpage:
 #endif /*ORIGINAL*/
 
 #ifdef JAPAN
-static char *_num[10] = { "£°","£±","£²","£³","£´","£µ","£¶","£·","£¸","£¹" };
+static char *_num[10] = { "‚O","‚P","‚Q","‚R","‚S","‚T","‚U","‚V","‚W","‚X" };
 
 znum(buf, n, plus)
 char *buf;
@@ -824,12 +824,12 @@ int n, plus;
 	while (*buf)
 		buf++;
 	if (plus && n >= 0) {
-		strcpy(buf, "¡Ü");
+		strcpy(buf, "{");
 		buf += 2;
 	}
 	sprintf(s, "%d", n);
 	for (p = s; *p; p++) {
-		strcpy(buf, (*p == '-')? "¡İ": _num[*p - '0']);
+		strcpy(buf, (*p == '-')? "|": _num[*p - '0']);
 		buf += 2;
 	}
 }
@@ -844,12 +844,12 @@ int plus;
 	while (*buf)
 		buf++;
 	if (plus && n >= 0L) {
-		strcpy(buf, "¡Ü");
+		strcpy(buf, "{");
 		buf += 2;
 	}
 	sprintf(s, "%ld", n);
 	for (p = s; *p; p++) {
-		strcpy(buf, (*p == '-')? "¡İ": _num[*p - '0']);
+		strcpy(buf, (*p == '-')? "|": _num[*p - '0']);
 		buf += 2;
 	}
 }

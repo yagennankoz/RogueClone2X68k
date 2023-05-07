@@ -129,7 +129,7 @@ short other;
 		(void) strcat(buf, buf2);
 		(void) strcat(buf, mesg[181]);
 		lznum(buf, rogue.gold, 0);
-		strcat(buf, "｡｣");
+		strcat(buf, "。");
 		message(buf, 0);
 	}
 	message("", 0);
@@ -418,7 +418,7 @@ boolean from_intrpt;
 	}
 	check_message();
 #ifdef JAPAN
-	message("･ｲ｡ｼ･爨ｪﾎｻ､ｷ､ﾆ､隍､､ﾎ､ﾇ､ｹ､ｫ｡ｩ", 1);
+	message("ゲームを終了してよいのですか？", 1);
 #else
 	message("Really quit?", 1);
 #endif
@@ -805,7 +805,7 @@ object *monster;
 		(void) strcat(buf, m_names[monster->m_char - 'A']);
 		(void) strcat(buf, mesg[197]);
 	}
-	strcat(buf, "｡｣");
+	strcat(buf, "。");
 	for (i = strlen(buf); i < 79; i++) {
 		buf[i] = ' ';
 	}

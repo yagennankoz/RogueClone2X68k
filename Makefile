@@ -1,5 +1,4 @@
 CC = gcc
-AS = has
 LK = hlk
 
 SRCDIR = src
@@ -14,11 +13,10 @@ all:	$(TARGET)
 
 $(TARGET):	$(OBJS)
 			$(LK) -o $@ $^ -l $(LIBS) -d ___libgnu_patchlevel=3
-#			$(CC) $(CFLAGS) -I $(SRCDIR) -I $(include) -O 1 -o $@ $^ -d ___libgnu_patchlevel=3
+# ___libgnu_patchlevel の取得元不明のため、適当にセット
 
 $(OUTDIR)/%.o:$(SRCDIR)/%.c
 			$(CC) $(CFLAGS) -I $(SRCDIR) -O 2 -o $@ -c $<
 
-clean:
-			del $(OUTDIR)\*.*
+
 
