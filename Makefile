@@ -7,7 +7,7 @@ TARGET = $(OUTDIR)/rogue.x
 SRCS   = $(wildcard $(SRCDIR)/*.c)
 OBJS   = $(addprefix $(OUTDIR)/,$(patsubst %.c,%.o,$(subst $(SRCDIR)/,,$(SRCS))))
 LIBS   = DOSLIB.l CLIB.l FLOATLIB.l GNULIB.l 
-CFLAGS = -DMSDOS -DHUMAN -DCURSES -DCOLOR -DJAPAN
+CFLAGS = -DMSDOS -DHUMAN -DCURSES -DCOLOR -DJAPAN -DTOPSCO
 
 all:	$(TARGET)
 
